@@ -5,24 +5,26 @@ export default function Body() {
     </div>
   );
 }
-export default function parnt(){
-  let message="hello child"
+//if
+export default function login(){
+  let islogin = true
+  if(islogin){
+    return <h1>wellcome</h1>
+  }
+  return <h1>pleas login in the site</h1>
+}
+//ternary oprator
+export default function login(){
+  let islogin = true
+    return islogin ? <h1>wellcome</h1> : <h1>pleas login in the site</h1>
+}
+//&&
+export default function cotion(){
+  let hiscount = false
   return(
     <div>
-      <child text={message}/>
-
+      <h1>you have cotion</h1>
+      {hiscount && <h1>wellcom</h1>}
     </div>
   )
 }
-
-export default function row(props){
-  return(
-    <div>
-      <h1>{props.techer}</h1>
-      <h2>{props.hours}</h2>
-      <h3>{props.subject}</h3>
-    </div>
-  )
-}
-
-
