@@ -5,11 +5,13 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 //import Render from "./Render.Jsx";
 import Side from "./Side.Jsx";
+import TodoList from "TodoList.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Side />
+    <TodoList />
   </React.StrictMode>
 );
 
